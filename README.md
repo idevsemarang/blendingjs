@@ -4,12 +4,14 @@ Blending JS make your javascript code blend with the html easily
 ## Installation
 Just include this cdn library to your code:
 <pre>
+  ```html
   <script src="https://cdn.jsdelivr.net/gh/idevsemarang/blendingjs@main/main.js"></script>
 </pre>
 
 ## Blend per section
 Assume you have this tag with class .header, set variable {%idev_YOUR_VARIABLE_NAME%} for example:
 <pre>
+  ```html
   <div class="header">
       <h3>Newton's Second Law</h3>
       <span>By {%idev_yourName%}</span>
@@ -18,6 +20,7 @@ Assume you have this tag with class .header, set variable {%idev_YOUR_VARIABLE_N
 
 For the javascript, just fill the variable with content you want 
 <pre>
+  ```html
   idBlend(".header").qSection({yourName : "Jokodon"})
 </pre>
 
@@ -25,6 +28,7 @@ For the javascript, just fill the variable with content you want
 ## Blend Loop
 Assume you have loop content such as table, li, and many more for example:
 <pre>
+  ```html
     <table id="table-post">
         <thead>
             <tr>
