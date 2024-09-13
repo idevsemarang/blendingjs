@@ -16,7 +16,7 @@ Assume you have this tag with class .header, set variable {%idev_YOUR_VARIABLE_N
   </div>
 ```
 For the javascript, just fill the variable with content you want 
-```html
+```javascript
   idBlend(".header").qSection({yourName : "Jokodon"})
 ```
 
@@ -42,7 +42,7 @@ Assume you have loop content such as table, li, and many more for example:
 ```
 
 For the javascript, just fill the variable with content you want 
-```html
+```javascript
         const tbodySelector = document.querySelector('#table-post tbody');
         const trSelector = document.querySelector('#table-post tbody tr');
         const trSection = trSelector.outerHTML
