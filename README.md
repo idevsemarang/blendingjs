@@ -9,24 +9,20 @@ Just include this cdn library to your code:
 
 ## Blend per section
 Assume you have this tag with class .header, set variable {%idev_YOUR_VARIABLE_NAME%} for example:
-<pre>
+```html
   <div class="header">
       <h3>Newton's Second Law</h3>
       <span>By {%idev_yourName%}</span>
   </div>
-</pre>
-
+```
 For the javascript, just fill the variable with content you want 
-<pre>
-  ```html
+```html
   idBlend(".header").qSection({yourName : "Jokodon"})
-</pre>
-
+```
 
 ## Blend Loop
 Assume you have loop content such as table, li, and many more for example:
-<pre>
-  ```html
+```html
     <table id="table-post">
         <thead>
             <tr>
@@ -43,10 +39,10 @@ Assume you have loop content such as table, li, and many more for example:
             </tr>
         </tbody>
     </table>
-</pre>
+```
 
 For the javascript, just fill the variable with content you want 
-<pre>
+```html
         const tbodySelector = document.querySelector('#table-post tbody');
         const trSelector = document.querySelector('#table-post tbody tr');
         const trSection = trSelector.outerHTML
@@ -74,5 +70,4 @@ For the javascript, just fill the variable with content you want
             tbodySelector.innerHTML = newTrSection;
             tbodySelector.classList.remove("skeleton-blur")
         })
-</pre>
-
+```
